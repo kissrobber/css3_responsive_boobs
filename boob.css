@@ -1,0 +1,160 @@
+body {
+  margin: 10px 10px 10px 0px;
+  
+  animation: bounce1 2s ease 0s infinite;
+  -moz-animation: bounce1 2s ease 0s infinite;
+  -webkit-animation: bounce1 2s ease 0s infinite;
+}
+a {
+  top: 10px;
+  left: 10px;
+  z-index:10;
+  position: absolute;
+}
+.boob {
+  margin: 0px;
+  padding: 0px;
+  
+  width: 80%;
+  height: 97%;
+  
+  border-width: 0px;
+  border-radius: 0 100% 100% 0 / 0 60% 40% 0;
+  box-shadow: 50px 50px 50px #ba6e57;
+  
+  animation: bounce2 1s ease -1s infinite alternate;
+  -moz-animation: bounce2 1s ease -1s infinite alternate;
+  -webkit-animation: bounce2 1s ease -1s infinite alternate;
+  
+}
+
+.boob:before {
+  content: "";
+  background: white;
+  width: 8%;
+  height: 8%;
+  left: 97%;
+  top: 54%;
+  position: absolute;
+  border-radius: 0 20% 20% 0;
+  box-shadow: 50px 50px 50px #ba6e57;
+}
+.boob:after {
+  content: "CSS3 Responsive おっぱい Boobs";
+  left: 100%;
+  top: 30%;
+  position: absolute;
+}
+
+@media screen and (orientation: landscape) {
+  .boob {
+    max-width: 35%;
+  }
+  .boob:after {
+    white-space: nowrap;
+    left: 130%;
+  }
+}
+
+@keyframes bounce1 {
+  0% {
+    transform-origin: 0 0;
+    transform: scaleX(0.97);
+    animation-timing-function: ease-out;
+    -moz-transform-origin: 0 0;
+    -moz-transform: scaleX(0.97);
+    -moz-animation-timing-function: ease-out;
+  }
+  10% {
+    transform-origin: 0 0;
+    transform: scaleX(0.94);
+    animation-timing-function: ease-in;
+    -moz-transform-origin: 0 0;
+    -moz-transform: scaleX(0.94);
+    -moz-animation-timing-function: ease-in;
+  }
+  20% {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+    animation-timing-function: ease-in;
+    -moz-transform-origin: 0 0;
+    -moz-transform: scaleX(1);
+    -moz-animation-timing-function: ease-in;
+  }
+  30% {
+    transform-origin: 0 0;
+    transform: scaleX(0.97);
+    -moz-transform-origin: 0 0;
+    -moz-transform: scaleX(0.97);
+  }
+}
+@-webkit-keyframes bounce1 {
+  0% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scaleX(0.97);
+    -webkit-animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scaleX(0.94);
+    -webkit-animation-timing-function: ease-in;
+  }
+  20% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scaleX(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+  30% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scaleX(0.97);
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    transform-origin: 0 0;
+    transform: skew(0, 1deg);
+    animation-timing-function: ease-out;
+    -moz-transform-origin: 0 0;
+    -moz-transform: skew(0, 1deg);
+    -moz-animation-timing-function: ease-out;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: skew(0, 1deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    transform-origin: 0 0;
+    transform: skew(0, -3deg);
+    animation-timing-function: ease-in;
+    -moz-transform-origin: 0 0;
+    -moz-transform: skew(0, -3deg);
+    -moz-animation-timing-function: ease-in;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: skew(0, -3deg);
+    -webkit-animation-timing-function: ease-in;
+  }
+  100% {
+    transform-origin: 0 0;
+    transform: skew(0, 1deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: skew(0, 1deg);
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: skew(0, 1deg);
+  }
+}
+@-webkit-keyframes bounce2 {
+  0% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: skew(0, 1deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: skew(0, -3deg);
+    -webkit-animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: skew(0, 1deg);
+  }
+}
